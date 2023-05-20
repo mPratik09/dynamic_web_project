@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Customer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style>
+	 	.container .container-1 input{
+			padding: 2px 0;
+		}
+	 	
+	 	#logout {
+		 	color: #000;
+		 	margin-right: 10px;
+		 	padding: 8px 12px;
+	 	}
+	 	
+		#reset:hover, #logout:hover { 
+  			background: #242026;  
+/* 			background: #131315; */
+			color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec, 0 0 50px #8f7cec, 0 0 100px #8f7cec;
+		}	
+			
+/*
+	#submit:hover, #reset:hover { 
+		background: #8f7cec;
+		color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec, 0 0 50px #8f7cec, 0 0 100px #8f7cec;
+	}
+*/	
+	</style>
+			
+</head>
+<body>
+
+	<div class="logout-form">
+		<form action="logOutServlet" method="post">
+			<input type="submit" value="Log Out" id="logout">
+		</form>
+	</div>
+		
+	<div class="container" style="width: 400px">
+	
+		<h2>Create Customer</h2>
+		
+		<form action="createCustomer" method="post">
+		
+			<div class="container-1">
+				<input type="text" name="name" required>
+				<label>Name:</label>
+			</div>
+
+			<div class="container-1">
+				<input type="text" name="emailid" required="required">
+				<label>Email Id:</label>
+			</div>
+			
+			<div class="container-1">
+				<input type="text" name="phone" required>
+				<label>Contact Num:</label>
+			</div>
+			<div class="container-1">
+				<input type="text" name="city" required="required">
+				<label>City:</label>
+			</div>			
+
+			<div class="button-form">
+				<input type="submit" value="savE" id="submit">
+				<input type="reset" value="reset" id="reset">
+			</div>
+			
+		</form>
+	</div>
+</body>
+</html>

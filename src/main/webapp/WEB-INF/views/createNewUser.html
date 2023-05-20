@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create New User</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h2>Create New User</h2>
+		
+		<form action="newUser" method="post">
+			<div class="container-1">
+				<input type="text" name="emailid" required="required">
+				<label>Email Id:</label>			
+			 </div>
+			
+			 <div class="container-1">
+				<input type="password" name="enterpassword" required>
+				<label>Enter Password:</label>
+			</div>		
+			
+			 <div class="container-1">
+				<input type="password" name="reenterpassword" required>
+				<label>Re-Enter Password:</label>
+			 </div>
+			
+			 <div class="button-form">
+				<input type="submit" value="Register" id="submit">
+				<input type="reset" value="CLear" id="clear">
+			</div>
+		
+			<div id="login">
+				Back to&nbsp<a href="index.html">LOGIN </a>&nbsppage..
+			</div>
+			
+			<style>
+				
+				.container .container-1 input {
+					padding: 10px 0;
+				}
+			
+				#clear:hover { 
+			  		background: #242026;  
+			/* 		background: #131315; */
+					color: #fff;
+					border-radius: 5px;
+					box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec, 0 0 50px #8f7cec, 0 0 100px #8f7cec;
+				}		
+				
+				.button-form {
+					margin-top: 0px;
+				}
+				
+				#login {
+					font-size: 14px;
+					display: flex;
+					color: #CBBDDB;
+					margin-top: 20px;
+ 					justify-content: center; 
+/* 					align-content: center;	*/ 
+					
+				}
+				
+ 				#login a {
+ 					text-decoration: none;
+					color: #8F7CEC;
+				}
+ 
+				
+				
+			</style>
+			
+		</form>
+	</div>	
+	
+			
+</body>
+</html>
